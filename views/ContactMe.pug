@@ -1,0 +1,17 @@
+extends ../views/partials/header
+
+block content 
+    //ContactMe.pug, HaiderMalik200380367, contact page with form
+    h1= ContactPage
+   
+    p This is the contact form
+ 
+    form(method='POST' action='/insert') 
+       div
+            h2 Your name
+            input(type='text' name='name')
+       div
+            h2 Your question
+            input(type='text' name='question')
+       div
+            button(type='submit' value='Sumbit') Submit 
